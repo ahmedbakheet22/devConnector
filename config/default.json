@@ -1,3 +1,4 @@
 {
-    "mongoURI":"mongodb+srv://bakheet:a123456@devconnector-c171f.mongodb.net/<dbname>?retryWrites=true&w=majority"
+    "mongoURI":"mongodb+srv://bakheet:a123456@devconnector-c171f.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret":"devConSecretToken"
 }
