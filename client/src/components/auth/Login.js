@@ -7,6 +7,10 @@ import {login} from '../../actions/auth'
 
 
 const Login = ({login,isAuthenticated}) => {
+
+
+
+
    const [formData,useFormData]= useState({
        email:'',
        password:'',
@@ -26,7 +30,9 @@ const Login = ({login,isAuthenticated}) => {
 
      }
 
-     //redirect if loged in
+     
+
+    //  redirect if loged in
      if(isAuthenticated){
        return <Redirect to="/dashboard"/>
      }

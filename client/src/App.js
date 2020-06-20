@@ -5,12 +5,17 @@ import Navbar from './components/layout/Navbar'
 import Landing from './components/layout/Landing'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
+import Dashboard from './components/dashboard/dashboard'
+import PrivateRoute from './components/routing/PrivateRouting'
+import CreateProfile from './components/profileForms/CreateProfile'
+import EditProfile from './components/profileForms/editProfile'
 //redux
 import {Provider} from "react-redux";
 import store from './store'
 import Alert from './components/layout/alert'
 import {loadUser} from './actions/auth'
 import setAuthToken from './utils/setAuthToken';
+
 if(localStorage.token){
   setAuthToken(localStorage.token)
   
@@ -29,7 +34,7 @@ this will call it once the app is mounted and will loop calling
   */
 const App=()=> {
   useEffect(()=>{
-    store.dispatch(loadUser())
+      store.dispatch(loadUser())      
   },[])
   
   return (
@@ -43,6 +48,9 @@ const App=()=> {
       <Switch>
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
+        <PrivateRoute exact path='/dashboard' component={Dashboard} />
+        <PrivateRoute exact path='/create-profile' component={CreateProfile} />
+        <PrivateRoute exact path='/edit-profile' component={EditProfile} />
       </Switch>
     </section>
     </Fragment>
