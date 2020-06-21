@@ -1,0 +1,6 @@
+{
+    "mongoURI":"mongodb+srv://bakheet:a123456@devconnector-c171f.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret":"devConSecretToken",
+    "githubClientId":"69dea8752513a243f8b5",
+    "githubSecret":"c69e36d326997f834f7587f1cca08283cc0efd31"
+}
