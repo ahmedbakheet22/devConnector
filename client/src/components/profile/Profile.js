@@ -13,11 +13,11 @@ const  Profile=({
     getProfileById,
     auth,
     profile:{profile,loading},
-    computedMatch
+    match
 })=> {
 
     useEffect(()=>{
-        getProfileById(computedMatch.params.id)
+        getProfileById(match.params.id)
     },[getProfileById])
     return (
       <Fragment>
