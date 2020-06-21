@@ -23,14 +23,14 @@ const CommentForm = ({
             name="text"
             cols="30"
             rows="5"
-            placeholder="Create a post"
+            placeholder="Write Somthing..."
             required
             value={text}
             onChange={(e)=>{
                 setText(e.target.value)
             }}
           ></textarea>
-          <input type="submit" className="btn btn-dark my-1" value="Add Post" />
+          <input type="submit" className="btn btn-dark my-1" value="Add Comment" />
         </form>
       </div>
     )
