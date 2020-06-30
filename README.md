@@ -6,9 +6,13 @@ and post or comment to the app community
 
 
 technologies used to build this app
+
 NODE JS,
+
 EXPRESS,
+
 MONGO DB,
+
 REACT JS,
 
 
